@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css"
+	href="https://codepen.io/skjha5993/pen/bXqWpR.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	crossorigin="anonymous">
+
+<style>
+.body {
+	background: linear-gradient(to bottom left, #ffffcc 0%, #ff66ff 100%);
+}
+
+.navbar {
+	background: linear-gradient(to right, #33cccc 0%, #ffccff 100%);
+}
+</style>
+
+
+
+
+<title>Report</title>
+<body id="page-top">
+
+	<nav class="navbar sticky-top bg-dark flex-md-nowrap p-0">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" th:href="@{/dashboard}">SystemAdmin</a>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+				<div class="sidebar-sticky">
+
+					<ul class="nav flex-column">
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/dashboard}"> <i
+								class="fas fa-fw fa-tachometer-alt"></i> Dashboard
+
+						</a></li>
+					</ul>
+
+					<h6
+						class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+						<span>Facilities</span>
+					</h6>
+
+					<ul class="nav flex-column mb-2">
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/students}"> <i class="fas fa-child"></i> Students
+						</a></li>
+
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/teachers}"> <i class="fas fa-chalkboard-teacher"></i>
+								Teachers
+						</a></li>
+
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/classroom}"> <i class="fas fa-chair"></i>
+								Classroom
+
+						</a></li>
+					</ul>
+
+					<h6
+						class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+						<span>Reports</span>
+					</h6>
+					<ul class="nav flex-column mb-2">
+
+						<li class="nav-item"><a class="nav-link" th:href="@{/report}">
+								<i class="fas fa-chart-area"></i> Report <span class="sr-only">(current)</span>
+						</a></li>
+
+					</ul>
+
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<div id = "container" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+      
+      <script language = "JavaScript">
+//       $.ajax({
+//     	  url:'report',
+//     	  success:function(result){
+//     		  var FirstName=JSON.parse(result).FirstName;
+//     		  var grade=JSON.parse(result).grade;
+    		  
+//     	  }
+//       })
+      
+//       document.addEventListener('DOMContentLoaded', function () {
+//           const chart = Highcharts.chart('container', {
+//               chart: {
+//                   type: 'line'
+//               },
+//               title: {
+//                   text: 'Student Data'
+//               },
+//               xAxis: {
+//                   categories: 'FirstName'
+//               },
+//               yAxis: {
+//                   title: {
+//                       text: 'grade'
+//                   }
+//               },
+//               series: [{
+//                   data: 'grade'
+//               }]
+//           });
+//       });
+        	 
+         
+      </script>
+
+</body>
+</html>
+
